@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		B7A7473F2860A75700120FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7473E2860A75700120FB1 /* AppDelegate.swift */; };
 		B7A747412860A75700120FB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747402860A75700120FB1 /* SceneDelegate.swift */; };
-		B7A747432860A75700120FB1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747422860A75700120FB1 /* LoginViewController.swift */; };
 		B7A747462860A75700120FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A747442860A75700120FB1 /* Main.storyboard */; };
 		B7A747482860A75800120FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A747472860A75800120FB1 /* Assets.xcassets */; };
 		B7A7474B2860A75800120FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A747492860A75800120FB1 /* LaunchScreen.storyboard */; };
 		B7A747562860A75800120FB1 /* instagramCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747552860A75800120FB1 /* instagramCloneTests.swift */; };
 		B7A747602860A75800120FB1 /* instagramCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7475F2860A75800120FB1 /* instagramCloneUITests.swift */; };
 		B7A747622860A75800120FB1 /* instagramCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747612860A75800120FB1 /* instagramCloneUITestsLaunchTests.swift */; };
+		B7A747722860B84E00120FB1 /* EnterIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747712860B84E00120FB1 /* EnterIdViewController.swift */; };
+		B7A747742860B85A00120FB1 /* EnterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747732860B85A00120FB1 /* EnterPwViewController.swift */; };
+		B7A747762860B87100120FB1 /* EnterPhoneOrEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747752860B87100120FB1 /* EnterPhoneOrEmailViewController.swift */; };
+		B7A7477A2860B98A00120FB1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747792860B98A00120FB1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		B7A7473B2860A75700120FB1 /* instagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A7473E2860A75700120FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A747402860A75700120FB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7A747422860A75700120FB1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7A747452860A75700120FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7A747472860A75800120FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A7474A2860A75800120FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		B7A7475B2860A75800120FB1 /* instagramCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagramCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A7475F2860A75800120FB1 /* instagramCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagramCloneUITests.swift; sourceTree = "<group>"; };
 		B7A747612860A75800120FB1 /* instagramCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagramCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7A747712860B84E00120FB1 /* EnterIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterIdViewController.swift; sourceTree = "<group>"; };
+		B7A747732860B85A00120FB1 /* EnterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPwViewController.swift; sourceTree = "<group>"; };
+		B7A747752860B87100120FB1 /* EnterPhoneOrEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneOrEmailViewController.swift; sourceTree = "<group>"; };
+		B7A747792860B98A00120FB1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +152,28 @@
 		B7A747702860A84900120FB1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B7A747422860A75700120FB1 /* LoginViewController.swift */,
+				B7A747772860B87700120FB1 /* Login */,
+				B7A747782860B87E00120FB1 /* Register */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B7A747772860B87700120FB1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7A747792860B98A00120FB1 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B7A747782860B87E00120FB1 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B7A747712860B84E00120FB1 /* EnterIdViewController.swift */,
+				B7A747732860B85A00120FB1 /* EnterPwViewController.swift */,
+				B7A747752860B87100120FB1 /* EnterPhoneOrEmailViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7A747432860A75700120FB1 /* LoginViewController.swift in Sources */,
+				B7A7477A2860B98A00120FB1 /* LoginViewController.swift in Sources */,
+				B7A747722860B84E00120FB1 /* EnterIdViewController.swift in Sources */,
 				B7A7473F2860A75700120FB1 /* AppDelegate.swift in Sources */,
+				B7A747742860B85A00120FB1 /* EnterPwViewController.swift in Sources */,
+				B7A747762860B87100120FB1 /* EnterPhoneOrEmailViewController.swift in Sources */,
 				B7A747412860A75700120FB1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
