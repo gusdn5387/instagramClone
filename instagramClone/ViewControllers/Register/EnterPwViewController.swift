@@ -33,13 +33,20 @@ class EnterPwViewController: UIViewController {
         self.passwordCheck = sender.text ?? ""
     }
     
-    // MARK: "전화번호 또는 이메일 주소 추가"로 이동
-    @IBAction func pushToEnterPhoneOrEmail(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let vc = storyboard.instantiateViewController(withIdentifier: "EnterPhoneOrEmailViewController") as! EnterPhoneOrEmailViewController
-        
-        self.navigationController?.pushViewController(vc, animated: true)
+    // MARK: "다음" 버튼 눌렀을 때 이벤트
+    @IBAction func didTapNextButton(_ sender: Any) {
+        if password.isValidPassword() {
+            // 비밀번호와 비밀번호 확인의 값이 같은 지 체크
+            if password == passwordCheck {
+                pushToEnterPhoneOrEmail()
+            } else {
+                let alert = Helper().alert(title: "올바르지 않은 입력입니다.", msg: "비밀번호와 비밀번호 확인이 일치하지 않습니다.")
+                present(alert, animated: true)
+            }
+        } else {
+            let alert = Helper().alert(title: "올바르지 않은 입력입니다.", msg: "비밀번호는 8글자 이상 50글자 이하여야 하며 영문과 숫자, 특수문자를 조합해야 합니다.")
+            present(alert, animated: true)
+        }
     }
 }
 
@@ -50,5 +57,14 @@ private extension EnterPwViewController {
         if password.count >= 8 && passwordCheck.count >= 8 {
             nextButton.isEnabled = true
         }
+    }
+    
+    // MARK: "전화번호 또는 이메일 주소 추가"로 이동
+    func pushToEnterPhoneOrEmail() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "EnterPhoneOrEmailViewController") as! EnterPhoneOrEmailViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

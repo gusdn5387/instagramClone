@@ -208,7 +208,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pushToEnterPw:" destination="1Z9-tL-Q1I" eventType="touchUpInside" id="QMs-YQ-qVd"/>
+                                    <action selector="didTapNextButton:" destination="1Z9-tL-Q1I" eventType="touchUpInside" id="60j-Nn-rCz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -257,7 +257,7 @@
                                     <constraint firstAttribute="height" constant="50" id="vv6-3G-i14"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="passwordTextFieldEditingChanged:" destination="7d2-LR-n6v" eventType="editingChanged" id="b1N-rZ-BMh"/>
                                 </connections>
@@ -268,7 +268,7 @@
                                     <constraint firstAttribute="height" constant="50" id="KR2-2e-Uh2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="passwordCheckTextFieldEditingChanged:" destination="7d2-LR-n6v" eventType="editingChanged" id="BQB-1q-BWw"/>
                                 </connections>
@@ -283,7 +283,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pushToEnterPhoneOrEmail:" destination="7d2-LR-n6v" eventType="touchUpInside" id="gCn-Xh-oqQ"/>
+                                    <action selector="didTapNextButton:" destination="7d2-LR-n6v" eventType="touchUpInside" id="3oo-nu-OwT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -324,7 +324,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dG-xR-PHl">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호 (하이픈(-) 포함)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dG-xR-PHl">
                                 <rect key="frame" x="15" y="159" width="384" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Dii-CR-wX8"/>
@@ -361,6 +361,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="다음">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapNextButton:" destination="mFV-Pa-hvJ" eventType="touchUpInside" id="yOU-EJ-XtM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lVw-qC-nsH"/>

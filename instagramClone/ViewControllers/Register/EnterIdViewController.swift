@@ -26,13 +26,14 @@ class EnterIdViewController: UIViewController {
         self.userName = sender.text ?? ""
     }
     
-    // MARK: "비밀번호 만들기"로 이동
-    @IBAction func pushToEnterPw(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let vc = storyboard.instantiateViewController(withIdentifier: "EnterPwViewController") as! EnterPwViewController
-        
-        self.navigationController?.pushViewController(vc, animated: true)
+    // MARK: "다음" 버튼 눌렀을 때 이벤트
+    @IBAction func didTapNextButton(_ sender: Any) {
+        if userName.isValidUserName() {
+            pushToEnterPw()
+        } else {
+            let alert = Helper().alert(title: "올바르지 않은 입력입니다.", msg: "사용자 이름은 5글자 이상 19글자 이하여야 하며 영문과 숫자, 특수문자(._)만 조합하실 수 있습니다.")
+            present(alert, animated: true)
+        }
     }
 }
 
@@ -43,5 +44,14 @@ private extension EnterIdViewController {
         if userName.count >= 5 {
             nextButton.isEnabled = true
         }
+    }
+    
+    // MARK: "비밀번호 만들기"로 이동
+    func pushToEnterPw() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "EnterPwViewController") as! EnterPwViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

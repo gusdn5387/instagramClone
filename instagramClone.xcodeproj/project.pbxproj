@@ -20,6 +20,7 @@
 		B7A747762860B87100120FB1 /* EnterPhoneOrEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747752860B87100120FB1 /* EnterPhoneOrEmailViewController.swift */; };
 		B7A7477A2860B98A00120FB1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747792860B98A00120FB1 /* LoginViewController.swift */; };
 		B7B859B72861FAE200A01AE1 /* String+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B859B62861FAE200A01AE1 /* String+Validate.swift */; };
+		B7B859B92862177600A01AE1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B859B82862177600A01AE1 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B7A747752860B87100120FB1 /* EnterPhoneOrEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneOrEmailViewController.swift; sourceTree = "<group>"; };
 		B7A747792860B98A00120FB1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7B859B62861FAE200A01AE1 /* String+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validate.swift"; sourceTree = "<group>"; };
+		B7B859B82862177600A01AE1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B859B62861FAE200A01AE1 /* String+Validate.swift */,
+				B7B859B82862177600A01AE1 /* Helper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				B7B859B72861FAE200A01AE1 /* String+Validate.swift in Sources */,
 				B7A747762860B87100120FB1 /* EnterPhoneOrEmailViewController.swift in Sources */,
 				B7A747412860A75700120FB1 /* SceneDelegate.swift in Sources */,
+				B7B859B92862177600A01AE1 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
