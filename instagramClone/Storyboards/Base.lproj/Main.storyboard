@@ -41,7 +41,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2c-Gu-jcH">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2c-Gu-jcH">
                                 <rect key="frame" x="15" y="365" width="384" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="tCf-1M-c4n"/>
@@ -157,6 +157,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GF5-rn-pUs"/>
+                    <connections>
+                        <outlet property="idField" destination="A2c-Gu-jcH" id="ZU4-vu-TgT"/>
+                        <outlet property="pwField" destination="iz3-lR-0fh" id="Jzd-Ub-ke1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DB-Hb-ked" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
