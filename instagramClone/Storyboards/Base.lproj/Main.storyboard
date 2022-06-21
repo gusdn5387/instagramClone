@@ -40,6 +40,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordTextFieldEditingChanged:" destination="bVD-6c-IYJ" eventType="editingChanged" id="9Uq-an-wAb"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A2c-Gu-jcH">
                                 <rect key="frame" x="15" y="365" width="384" height="50"/>
@@ -48,6 +51,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="userNameTextFieldEditingChanged:" destination="bVD-6c-IYJ" eventType="editingChanged" id="bog-Tz-UQo"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 잊으셨나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNU-cE-M19">
                                 <rect key="frame" x="276" y="483" width="123" height="16"/>
@@ -158,8 +164,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="GF5-rn-pUs"/>
                     <connections>
-                        <outlet property="idField" destination="A2c-Gu-jcH" id="ZU4-vu-TgT"/>
-                        <outlet property="pwField" destination="iz3-lR-0fh" id="Jzd-Ub-ke1"/>
+                        <outlet property="loginButton" destination="h1j-Sp-9vw" id="ux6-sL-ez5"/>
+                        <outlet property="passwordTextField" destination="iz3-lR-0fh" id="Ttg-qg-vdp"/>
+                        <outlet property="userNameTextField" destination="A2c-Gu-jcH" id="wYA-mw-wGl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DB-Hb-ked" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
