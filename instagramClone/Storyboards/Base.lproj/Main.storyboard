@@ -70,6 +70,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="로그인">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="bVD-6c-IYJ" eventType="touchUpInside" id="SXV-Yi-fMD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6z-ih-WjG">
                                 <rect key="frame" x="192" y="584" width="30" height="21"/>

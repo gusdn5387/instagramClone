@@ -34,6 +34,11 @@ class LoginViewController: UIViewController {
         self.password = sender.text ?? ""
     }
     
+    // MARK: 로그인 버튼 눌렀을 때 이벤트
+    @IBAction func didTapLoginButton(_ sender: Any) {
+        print(#function)
+    }
+    
     // MARK: "사용자 이름 만들기"로 이동
     @IBAction func pushToRegister(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
