@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="23.188405797101453" y="16.071428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="YXz-1S-aOV">
             <objects>
-                <viewController id="RNr-Bd-b5O" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedViewController" id="RNr-Bd-b5O" customClass="FeedViewController" customModule="instagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="saY-Za-K7M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="-693" y="1414"/>
         </scene>
-        <!--View Controller-->
+        <!--Shop View Controller-->
         <scene sceneID="938-L8-OAi">
             <objects>
-                <viewController id="zN0-em-bXX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopViewController" id="zN0-em-bXX" customClass="ShopViewController" customModule="instagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hFq-Yf-QAI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,10 +208,10 @@
             </objects>
             <point key="canvasLocation" x="20" y="1414"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="pzh-sp-eL3">
             <objects>
-                <viewController id="9A3-4C-4Pa" sceneMemberID="viewController">
+                <viewController id="9A3-4C-4Pa" customClass="ProfileViewController" customModule="instagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WAz-Xj-Ouk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
