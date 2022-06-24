@@ -43,7 +43,18 @@ class EnterPhoneOrEmailViewController: UIViewController {
         let isValidEmail: Bool = (email.count > 0 && email.isValidEmail()) || email.count == 0
         
         if isValidPhoneOrEmail && isValidPhone && isValidEmail {
-            print("이메일 주소: \(self.email), 전화번호: \(self.phone)")
+            let userName = UserModel.shared.tempUserName
+            let password = UserModel.shared.tempPassword
+            
+            // 회원 정보 설정
+            UserModel.shared.userInfo = UserInfo(userName: userName, password: password, phone: phone, email: email)
+            
+            let closure = { () -> Void in
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+            
+            let alert = Helper().alert(title: "회원가입 성공", msg: "\(userName)님 환영합니다!", action: closure)
+            present(alert, animated: true)
         } else {
             let alert = Helper().alert(title: "올바르지 않은 입력입니다.", msg: "전화번호 또는 이메일을 확인해주세요.")
             present(alert, animated: true)

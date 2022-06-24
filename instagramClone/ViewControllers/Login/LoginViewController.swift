@@ -36,7 +36,18 @@ class LoginViewController: UIViewController {
     
     // MARK: 로그인 버튼 눌렀을 때 이벤트
     @IBAction func didTapLoginButton(_ sender: Any) {
-        print(#function)
+        if let userInfo = UserModel.shared.userInfo {
+            if userInfo.userName == userName && userInfo.password == password {
+                let alert = Helper().alert(title: "로그인 성공", msg: "\(userInfo)")
+                present(alert, animated: true)
+            } else {
+                let alert = Helper().alert(title: "로그인 실패", msg: "아이디 또는 비밀번호를 잘못 입력했습니다.\n입력하신 내용을 다시 한 번 확인해주세요.")
+                present(alert, animated: true)
+            }
+        } else {
+            let alert = Helper().alert(title: "로그인 실패", msg: "가입된 회원 정보가 없습니다.")
+            present(alert, animated: true)
+        }
     }
     
     // MARK: "사용자 이름 만들기"로 이동
@@ -44,6 +55,8 @@ class LoginViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(withIdentifier: "EnterIdViewController") as! EnterIdViewController
+        
+        UserModel.shared.tempReset()
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

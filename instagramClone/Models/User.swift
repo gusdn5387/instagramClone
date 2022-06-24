@@ -18,19 +18,15 @@ class UserModel {
     static let shared = UserModel()
     
     // 회원가입용 임시 저장 데이터
-    public var tempUserName: String?
-    public var tempPassword: String?
-    public var tempPhone: String?
-    public var tempEmail: String?
+    public var tempUserName: String = ""
+    public var tempPassword: String = ""
     
     // 회원 정보 (DummyData)
     public var userInfo: UserInfo?
     
     // MARK: 회원가입용 임시 저장 데이터 초기화
     public func tempReset() {
-        self.tempUserName = nil
-        self.tempPassword = nil
-        self.tempPhone = nil
-        self.tempEmail = nil
+        self.tempUserName = ""
+        self.tempPassword = ""
     }
 }

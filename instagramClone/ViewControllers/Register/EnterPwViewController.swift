@@ -38,6 +38,7 @@ class EnterPwViewController: UIViewController {
         if password.isValidPassword() {
             // 비밀번호와 비밀번호 확인의 값이 같은 지 체크
             if password == passwordCheck {
+                UserModel.shared.tempPassword = password
                 pushToEnterPhoneOrEmail()
             } else {
                 let alert = Helper().alert(title: "올바르지 않은 입력입니다.", msg: "비밀번호와 비밀번호 확인이 일치하지 않습니다.")

@@ -29,6 +29,7 @@ class EnterIdViewController: UIViewController {
     // MARK: "다음" 버튼 눌렀을 때 이벤트
     @IBAction func didTapNextButton(_ sender: Any) {
         if userName.isValidUserName() {
+            UserModel.shared.tempUserName = userName
             pushToEnterPw()
         } else {
             let alert = Helper().alert(title: "올바르지 않은 입력입니다.", msg: "사용자 이름은 5글자 이상 19글자 이하여야 하며 영문과 숫자, 특수문자(._)만 조합하실 수 있습니다.")

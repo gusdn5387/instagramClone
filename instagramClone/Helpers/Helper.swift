@@ -9,9 +9,12 @@ import UIKit
 
 class Helper {
     // MARK: alert 띄우기
-    func alert(title: String, msg: String) -> UIAlertController {
+    func alert(title: String, msg: String, action: (() -> Void)? = nil) -> UIAlertController {
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인", style: .default)
+        let okAction = UIAlertAction(title: "확인", style: .default) { _ in
+            guard let action = action else { return }
+            action()
+        }
         alert.addAction(okAction)
         
         return alert
