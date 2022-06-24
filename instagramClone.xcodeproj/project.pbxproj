@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B76CBED2286546FB006B757E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76CBED1286546FB006B757E /* User.swift */; };
 		B7A7473F2860A75700120FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7473E2860A75700120FB1 /* AppDelegate.swift */; };
 		B7A747412860A75700120FB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747402860A75700120FB1 /* SceneDelegate.swift */; };
 		B7A747462860A75700120FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A747442860A75700120FB1 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B76CBED1286546FB006B757E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7A7473B2860A75700120FB1 /* instagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A7473E2860A75700120FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A747402860A75700120FB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B76CBED0286546B8006B757E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B76CBED1286546FB006B757E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B7A747322860A75700120FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		B7A7473D2860A75700120FB1 /* instagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				B76CBED0286546B8006B757E /* Models */,
 				B7B859B52861F66F00A01AE1 /* Helpers */,
 				B7A7476E2860A82D00120FB1 /* App */,
 				B7A747702860A84900120FB1 /* ViewControllers */,
@@ -326,6 +337,7 @@
 				B7A7473F2860A75700120FB1 /* AppDelegate.swift in Sources */,
 				B7A747742860B85A00120FB1 /* EnterPwViewController.swift in Sources */,
 				B7B859B72861FAE200A01AE1 /* String+Validate.swift in Sources */,
+				B76CBED2286546FB006B757E /* User.swift in Sources */,
 				B7A747762860B87100120FB1 /* EnterPhoneOrEmailViewController.swift in Sources */,
 				B7A747412860A75700120FB1 /* SceneDelegate.swift in Sources */,
 				B7B859B92862177600A01AE1 /* Helper.swift in Sources */,
