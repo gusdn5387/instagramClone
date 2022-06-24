@@ -211,7 +211,7 @@
         <!--Profile View Controller-->
         <scene sceneID="pzh-sp-eL3">
             <objects>
-                <viewController id="9A3-4C-4Pa" customClass="ProfileViewController" customModule="instagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="9A3-4C-4Pa" customClass="ProfileViewController" customModule="instagramClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WAz-Xj-Ouk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

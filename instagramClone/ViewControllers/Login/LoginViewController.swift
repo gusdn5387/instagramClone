@@ -37,9 +37,11 @@ class LoginViewController: UIViewController {
     // MARK: 로그인 버튼 눌렀을 때 이벤트
     @IBAction func didTapLoginButton(_ sender: Any) {
         if let userInfo = UserModel.shared.userInfo {
-            if userInfo.userName == userName && userInfo.password == password {
-                let alert = Helper().alert(title: "로그인 성공", msg: "\(userInfo)")
-                present(alert, animated: true)
+            if userInfo.userName == userName && userInfo.password == password {                
+                // 로그인 성공 시 탭 바 컨트롤러로 루트 뷰 컨트롤러 변경
+                let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+                self.view.window?.windowScene?.keyWindow?.rootViewController = vc
+                
             } else {
                 let alert = Helper().alert(title: "로그인 실패", msg: "아이디 또는 비밀번호를 잘못 입력했습니다.\n입력하신 내용을 다시 한 번 확인해주세요.")
                 present(alert, animated: true)
