@@ -26,6 +26,7 @@
 		B7A7477A2860B98A00120FB1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A747792860B98A00120FB1 /* LoginViewController.swift */; };
 		B7B859B72861FAE200A01AE1 /* String+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B859B62861FAE200A01AE1 /* String+Validate.swift */; };
 		B7B859B92862177600A01AE1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B859B82862177600A01AE1 /* Helper.swift */; };
+		B7BF21F92868A7E500BAD397 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B7BF21F82868A7E500BAD397 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BF21F92868A7E500BAD397 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +255,9 @@
 			dependencies = (
 			);
 			name = instagramClone;
+			packageProductDependencies = (
+				B7BF21F82868A7E500BAD397 /* Alamofire */,
+			);
 			productName = instagramClone;
 			productReference = B7A7473B2860A75700120FB1 /* instagramClone.app */;
 			productType = "com.apple.product-type.application";
@@ -325,6 +330,9 @@
 				Base,
 			);
 			mainGroup = B7A747322860A75700120FB1;
+			packageReferences = (
+				B7BF21F72868A7E500BAD397 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B7A7473C2860A75700120FB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -720,6 +728,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7BF21F72868A7E500BAD397 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7BF21F82868A7E500BAD397 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7BF21F72868A7E500BAD397 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7A747332860A75700120FB1 /* Project object */;
 }
