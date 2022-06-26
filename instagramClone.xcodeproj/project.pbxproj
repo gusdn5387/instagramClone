@@ -27,6 +27,9 @@
 		B7B859B72861FAE200A01AE1 /* String+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B859B62861FAE200A01AE1 /* String+Validate.swift */; };
 		B7B859B92862177600A01AE1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B859B82862177600A01AE1 /* Helper.swift */; };
 		B7BF21F92868A7E500BAD397 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B7BF21F82868A7E500BAD397 /* Alamofire */; };
+		B7BF21FC2868AA2900BAD397 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF21FB2868AA2900BAD397 /* FeedService.swift */; };
+		B7BF21FE2868AC5000BAD397 /* FeedInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF21FD2868AC5000BAD397 /* FeedInput.swift */; };
+		B7BF22002868AC5700BAD397 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF21FF2868AC5700BAD397 /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		B7A747792860B98A00120FB1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7B859B62861FAE200A01AE1 /* String+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validate.swift"; sourceTree = "<group>"; };
 		B7B859B82862177600A01AE1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B7BF21FB2868AA2900BAD397 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		B7BF21FD2868AC5000BAD397 /* FeedInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInput.swift; sourceTree = "<group>"; };
+		B7BF21FF2868AC5700BAD397 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				B76CBED1286546FB006B757E /* User.swift */,
+				B7BF21FF2868AC5700BAD397 /* Feed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 		B76CBED528658B4D006B757E /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				B7BF21FA2868A8C600BAD397 /* Service */,
 				B76CBED828658B87006B757E /* FeedViewController.swift */,
 			);
 			path = Feed;
@@ -237,6 +245,15 @@
 				B7B859B82862177600A01AE1 /* Helper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B7BF21FA2868A8C600BAD397 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B7BF21FB2868AA2900BAD397 /* FeedService.swift */,
+				B7BF21FD2868AC5000BAD397 /* FeedInput.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7A7477A2860B98A00120FB1 /* LoginViewController.swift in Sources */,
+				B7BF21FC2868AA2900BAD397 /* FeedService.swift in Sources */,
 				B7A747722860B84E00120FB1 /* EnterIdViewController.swift in Sources */,
 				B7A7473F2860A75700120FB1 /* AppDelegate.swift in Sources */,
 				B76CBED4286589F8006B757E /* TabBarController.swift in Sources */,
@@ -384,7 +402,9 @@
 				B7B859B72861FAE200A01AE1 /* String+Validate.swift in Sources */,
 				B76CBED2286546FB006B757E /* User.swift in Sources */,
 				B76CBED928658B87006B757E /* FeedViewController.swift in Sources */,
+				B7BF22002868AC5700BAD397 /* Feed.swift in Sources */,
 				B76CBEDB28658B8E006B757E /* ShopViewController.swift in Sources */,
+				B7BF21FE2868AC5000BAD397 /* FeedInput.swift in Sources */,
 				B7A747762860B87100120FB1 /* EnterPhoneOrEmailViewController.swift in Sources */,
 				B76CBEDD28658B95006B757E /* ProfileViewController.swift in Sources */,
 				B7A747412860A75700120FB1 /* SceneDelegate.swift in Sources */,
