@@ -37,6 +37,10 @@
 		B7BF21FC2868AA2900BAD397 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF21FB2868AA2900BAD397 /* FeedService.swift */; };
 		B7BF21FE2868AC5000BAD397 /* FeedInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF21FD2868AC5000BAD397 /* FeedInput.swift */; };
 		B7BF22002868AC5700BAD397 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF21FF2868AC5700BAD397 /* Feed.swift */; };
+		B7EA91DE28699CD900717A06 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EA91DC28699CD900717A06 /* ProfileCollectionViewCell.swift */; };
+		B7EA91DF28699CD900717A06 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EA91DD28699CD900717A06 /* ProfileCollectionViewCell.xib */; };
+		B7EA91E328699CF700717A06 /* ProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EA91E128699CF700717A06 /* ProfileCollectionReusableView.swift */; };
+		B7EA91E428699CF700717A06 /* ProfileCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EA91E228699CF700717A06 /* ProfileCollectionReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		B7BF21FB2868AA2900BAD397 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		B7BF21FD2868AC5000BAD397 /* FeedInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInput.swift; sourceTree = "<group>"; };
 		B7BF21FF2868AC5700BAD397 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		B7EA91DC28699CD900717A06 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7EA91DD28699CD900717A06 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		B7EA91E128699CF700717A06 /* ProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionReusableView.swift; sourceTree = "<group>"; };
+		B7EA91E228699CF700717A06 /* ProfileCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,7 @@
 		B76CBED728658B61006B757E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				B7EA91D928699CB700717A06 /* Cells */,
 				B76CBEDC28658B95006B757E /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -300,6 +309,17 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		B7EA91D928699CB700717A06 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B7EA91DC28699CD900717A06 /* ProfileCollectionViewCell.swift */,
+				B7EA91DD28699CD900717A06 /* ProfileCollectionViewCell.xib */,
+				B7EA91E128699CF700717A06 /* ProfileCollectionReusableView.swift */,
+				B7EA91E228699CF700717A06 /* ProfileCollectionReusableView.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -415,9 +435,11 @@
 				B7A7474B2860A75800120FB1 /* LaunchScreen.storyboard in Resources */,
 				B76CBEE828693A31006B757E /* FeedTableViewCell.xib in Resources */,
 				B7A747482860A75800120FB1 /* Assets.xcassets in Resources */,
+				B7EA91DF28699CD900717A06 /* ProfileCollectionViewCell.xib in Resources */,
 				B7A747462860A75700120FB1 /* Main.storyboard in Resources */,
 				B76CBEEF286956F8006B757E /* StoryCollectionViewCell.xib in Resources */,
 				B76CBEE228693A15006B757E /* StoryTableViewCell.xib in Resources */,
+				B7EA91E428699CF700717A06 /* ProfileCollectionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +466,7 @@
 			files = (
 				B7A7477A2860B98A00120FB1 /* LoginViewController.swift in Sources */,
 				B7BF21FC2868AA2900BAD397 /* FeedService.swift in Sources */,
+				B7EA91E328699CF700717A06 /* ProfileCollectionReusableView.swift in Sources */,
 				B7A747722860B84E00120FB1 /* EnterIdViewController.swift in Sources */,
 				B7A7473F2860A75700120FB1 /* AppDelegate.swift in Sources */,
 				B76CBED4286589F8006B757E /* TabBarController.swift in Sources */,
@@ -456,6 +479,7 @@
 				B7BF22002868AC5700BAD397 /* Feed.swift in Sources */,
 				B76CBEDB28658B8E006B757E /* ShopViewController.swift in Sources */,
 				B7BF21FE2868AC5000BAD397 /* FeedInput.swift in Sources */,
+				B7EA91DE28699CD900717A06 /* ProfileCollectionViewCell.swift in Sources */,
 				B7A747762860B87100120FB1 /* EnterPhoneOrEmailViewController.swift in Sources */,
 				B76CBEDD28658B95006B757E /* ProfileViewController.swift in Sources */,
 				B76CBEE128693A15006B757E /* StoryTableViewCell.swift in Sources */,
