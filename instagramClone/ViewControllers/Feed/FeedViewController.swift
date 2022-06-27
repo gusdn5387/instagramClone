@@ -53,10 +53,12 @@ private extension FeedViewController {
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
+    // 섹션 개수
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
+    // 섹션별 셀 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
@@ -65,6 +67,7 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    // 셀 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCellIdentifier.story.desc, for: indexPath) as! StoryTableViewCell
@@ -73,6 +76,15 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCellIdentifier.feed.desc, for: indexPath) as! FeedTableViewCell
             cell.updateUI(feedListData[indexPath.row])
             return cell
+        }
+    }
+    
+    // 셀 높이 설정
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 70
+        } else {
+            return 600
         }
     }
 }
