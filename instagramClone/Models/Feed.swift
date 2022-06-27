@@ -7,6 +7,6 @@ import Foundation
 
 // MARK: - Entity
 struct Feed: Decodable {
-    let id: String
-    let url: String
+    let id: String?
+    let url: String?
 }
