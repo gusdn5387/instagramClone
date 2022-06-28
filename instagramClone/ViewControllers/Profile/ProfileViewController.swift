@@ -51,7 +51,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     // MARK: 컬렉션 뷰 헤더 사이즈
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         let width: CGFloat = collectionView.frame.width
-        let height: CGFloat = 150
+        let height: CGFloat = 190
 
         return CGSize(width: width, height: height)
     }
