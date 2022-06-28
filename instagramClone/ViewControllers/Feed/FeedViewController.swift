@@ -30,8 +30,8 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         
         // 피드 데이터 가져오기
-        FeedService().getFeedData(parameters: FeedInput(limit: 10, page: 0)) { data in
-            self.feedListData = data
+        FeedService().getFeedData(parameters: FeedInput(limit: 10, page: 0)) { [weak self] data in
+            self?.feedListData = data
         }
         setupTableView()
     }
